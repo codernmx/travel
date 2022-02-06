@@ -1,0 +1,75 @@
+.listItem {
+	flex: 1;
+	display: flex;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#myMap {
+	margin-top: 64rpx;
+}
+
+.listItem image {
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 32rpx;
+}
+
+.address {
+	display: flex;
+	align-items: center;
+	font-size: 28rpx;
+	margin-top: 10rpx;
+}
+
+.address image {
+	width: 50px;
+	margin-right: 20rpx;
+}
+
+.meter {
+	margin-right: 30rpx;
+}
+
+.itemBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rightButton {
+	width: 70rpx;
+}
+
+.rightButton image {
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.addressTitle {
+	flex: 1;
+}
+
+.searchBox {
+	height: 100rpx;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	margin-top: 60rpx;
+	margin-bottom: 30rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.startAndEnd {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

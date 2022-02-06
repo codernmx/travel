@@ -1,0 +1,7 @@
+deploy_versions/
+.temp/
+.rn_temp/
+node_modules/
+miniprogram_npm
+.DS_Store
+.vscode

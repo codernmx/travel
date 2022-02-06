@@ -1,0 +1,23 @@
+.listItem {
+	height: 180rpx;
+	display: flex;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.listItem image {
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 32rpx;
+}
+
+.address {
+	font-size: 28rpx;
+	margin-top: 10rpx;
+}

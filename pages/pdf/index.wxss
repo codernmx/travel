@@ -1,0 +1,96 @@
+page{
+	background: #f7f4f4;
+}
+.button{
+	margin-top: 100rpx;
+	padding: 0 8%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cen{
+	text-align: center;
+}
+.toFile{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 30px;
+}
+.tabOne{
+	padding: 0 30rpx;
+	font-size: 26rpx;
+	color: red;
+	line-height: 50rpx;
+}
+.loadingClass{
+	margin-top: 100rpx;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.toFilePro{
+	margin-top: 30rpx;
+}
+.chooseFileBox{
+	display: flex;
+	flex-direction: column;
+}
+.tips{
+	font-size: 24rpx;
+	color: red;
+	width: 180rpx;
+	margin-top: 20rpx;
+}
+.pdfToFileBox{
+	height: 100%;
+}
+.toPdfButton{
+	margin-top: 30rpx;
+	padding: 0 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.loading{
+	width: 100%;
+	text-align: center;
+}
+.historyBox{
+	padding: 0 30rpx;
+}
+.historyItem{
+	text-align: center;
+	line-height: 100rpx;
+	height: 100rpx;
+	font-size: 28rpx;
+	background: #FFFFFF;
+	border-radius: 10rpx;
+	margin-bottom: 20rpx;
+}
+/* .historyButton{
+	margin: 30rpx 0;
+	padding: 0 30rpx;
+} */
+
+.clearHistory{
+	display: flex;
+	justify-content: center;
+	padding: 0 30rpx;
+	margin-bottom: 30rpx;
+}
+.share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70rpx;
+  width: 150rpx;
+  font-size: 28rpx;
+  background: #17B53A;
+  color: aliceblue;
+  position: fixed;
+  right: 0;
+  bottom: 390rpx;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+} 

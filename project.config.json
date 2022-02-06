@@ -1,0 +1,58 @@
+{
+        "description": "项目配置文件。",
+        "setting": {
+                "urlCheck": true,
+                "es6": true,
+                "enhance": true,
+                "postcss": true,
+                "preloadBackgroundData": false,
+                "minified": true,
+                "newFeature": true,
+                "coverView": true,
+                "nodeModules": true,
+                "autoAudits": false,
+                "showShadowRootInWxmlPanel": true,
+                "scopeDataCheck": false,
+                "uglifyFileName": false,
+                "checkInvalidKey": true,
+                "checkSiteMap": false,
+                "uploadWithSourceMap": true,
+                "compileHotReLoad": false,
+                "lazyloadPlaceholderEnable": false,
+                "useMultiFrameRuntime": true,
+                "useApiHook": true,
+                "useApiHostProcess": true,
+                "babelSetting": {
+                        "ignore": [],
+                        "disablePlugins": [],
+                        "outputPath": ""
+                },
+                "enableEngineNative": false,
+                "useIsolateContext": false,
+                "userConfirmedBundleSwitch": false,
+                "packNpmManually": false,
+                "packNpmRelationList": [],
+                "minifyWXSS": true,
+                "disableUseStrict": false,
+                "minifyWXML": true,
+                "showES6CompileOption": false,
+                "useCompilerPlugins": false
+        },
+        "compileType": "miniprogram",
+        "libVersion": "2.9.5",
+        "appid": "wx285a242d191f9226",
+        "projectname": "便捷出行Pro",
+        "simulatorType": "wechat",
+        "simulatorPluginLibVersion": {},
+        "condition": {
+                "search": {
+                        "list": []
+                },
+                "conversation": {
+                        "list": []
+                },
+                "miniprogram": {
+                        "list": []
+                }
+        }
+}

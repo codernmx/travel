@@ -1,0 +1,22 @@
+<view class="bg"></view>
+<view class="page">
+        <view class="card one" style="min-height: 300rpx;">
+                <view class="title">当前总共签到次数</view>
+                <van-steps style="margin: 30rpx 0 0 0;" steps="{{ steps }}" />
+                <view class="submit" bindtap="submit">立即签到</view>
+        </view>
+        <view class="card" style="min-height: 220rpx;">
+                <view class="title">做任务领次数</view>
+                <view class="flex" style="margin:30rpx 0">
+                        <image src="../../assets/imgs/my/video.png" class="video"></image>
+                        <view>
+                                <view>看视频免费领次数</view>
+                                <view style="font-size:26rpx;margin-top: 10rpx;">完成任务，可领取三个提取次数</view>
+                        </view>
+                        <view class="finish" bindtap="openAdVideo">去完成</view>
+
+                </view>
+        </view>
+</view>
+
+<van-toast id="van-toast" />

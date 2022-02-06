@@ -1,0 +1,25 @@
+<view class="cn">
+	<text>中文</text>
+	<van-field value="{{ cnValue }}" placeholder="请输入" border="{{ false }}" bind:change="cnOnChange"
+		type="textarea" />
+</view>
+<view class="chooseImg">
+	<van-button bindtap="translate" type="primary" size="small">翻译</van-button>
+	<van-button type="primary" size="small" bindtap="openAdVideo">拍照识别</van-button>
+</view>
+<view class="tips">* 观看完整广告之后可以使用拍照识别功能</view>
+<view class="en" bindtap="copyEnglish">
+	<text>英文</text>
+	<view class="to">{{transResultInfo[0].dst}}</view>
+</view>
+<view bindtap="copyText" class="copyText" wx:if="{{wordList.length>0}}">
+	<van-button type="primary" size="small" custom-style="border-radius:15rpx">复制拍照识别结果</van-button>
+</view>
+<view class="wordList" wx:if="{{wordList.length>0}}">
+	<view wx:for="{{wordList}}" wx:key="index">
+		<text>{{item.src}}</text>
+	</view>
+</view>
+<van-toast id="van-toast" />
+<!-- 加载动画 -->
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

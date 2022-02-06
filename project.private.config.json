@@ -1,0 +1,108 @@
+{
+        "setting": {},
+        "condition": {
+                "plugin": {
+                        "list": []
+                },
+                "game": {
+                        "list": []
+                },
+                "gamePlugin": {
+                        "list": []
+                },
+                "miniprogram": {
+                        "list": [
+                                {
+                                        "name": "pages/me/index",
+                                        "pathName": "pages/me/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "关于我们",
+                                        "pathName": "pages/about/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "意见反馈",
+                                        "pathName": "pages/opinion/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "地铁图",
+                                        "pathName": "pages/map/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "首页",
+                                        "pathName": "pages/help/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "停车场",
+                                        "pathName": "pages/park/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "厕所",
+                                        "pathName": "pages/wc/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "公交",
+                                        "pathName": "pages/bus/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "我的",
+                                        "pathName": "pages/me/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "天气",
+                                        "pathName": "pages/index/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "设置",
+                                        "pathName": "pages/seeting/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "翻译",
+                                        "pathName": "pages/translate/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "pdf",
+                                        "pathName": "pages/pdf/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "签到",
+                                        "pathName": "pages/signIn/index",
+                                        "query": "",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "登录",
+                                        "pathName": "pages/login/index",
+                                        "query": "",
+                                        "scene": null
+                                }
+                        ]
+                }
+        }
+}

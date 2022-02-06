@@ -1,0 +1,53 @@
+page {
+        background: #F6F7FB;
+}
+
+.bg {
+        background: #5467F4;
+        height: 350rpx;
+}
+
+.card {
+        border-radius: 30rpx;
+        background: #ffffff;
+        margin-bottom: 40rpx;
+        padding: 30rpx;
+}
+
+.page {
+        padding: 20rpx;
+}
+
+.one {
+        margin-top: -150rpx;
+}
+.submit{
+        margin-top: 30rpx;
+        text-align: center;
+        height: 90rpx;
+        border-radius: 30rpx;
+        line-height: 90rpx;
+        color: #ffffff;
+        background: #5467F4;
+}
+.title {
+        font-weight: 600;
+        font-size: 32rpx;
+        text-align: center;
+}
+
+.video {
+        width: 90rpx;
+        height: 90rpx;
+}
+
+.finish {
+        background: #5467F4;
+        border-radius: 30rpx;
+        width: 130rpx;
+        text-align: center;
+        height: 50rpx;
+        line-height: 50rpx;
+        font-size: 26rpx;
+        color: #ffffff;
+}

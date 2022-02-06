@@ -1,0 +1,78 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<van-tabs active="{{ activeTab }}" bind:change="onChange" animated line-width="80">
+	<van-tab title="文档转PDF" name="1">
+		<view class="tabOne">
+			<view>微软Office文档:doc,docx,ppt,pptx,xls,xlsx,pot,pps,pps</view>
+			<view>WPS文档:wps,wpt,dps,dpt,et,ett</view>
+			<view>苹果文档:pages,key,numbers</view>
+			<view>CAD文档:dwg,dxfdwt,dws</view>
+			<view>Sketch文档:sketch</view>
+			<view>图片文件:png,jpg,jpeg,gif,tif,tiff,bm</view>
+			<view>其他:txt,rtf,java,cpp,html,htm,jsp,css,xml,properties等</view>
+		</view>
+		<view class="toPdfButton">
+			<van-button type="primary" size="small" bindtap="chooseFileToPdf">上传文件转PDF</van-button>
+			<van-button type="primary" size="small" bindtap="chooseImgToPdf">拍照转PDF</van-button>
+			<van-button type="info" size="small" loading-text="加载中..." loading-type="spinner"
+				bind:click="getDownloadFile" loading="{{preFileLoading}}">
+				预览文件</van-button>
+		</view>
+		<view class="loadingClass" wx:if="{{loadCount != 0}}">
+			<!-- <van-circle value="{{ loadCount }}" text="{{loadCount + '%'}}" /> -->
+			<van-progress percentage="{{ loadCount }}" />
+			<text class="toFilePro">文件转化进度</text>
+		</view>
+		<!-- <view class="historyButton">转化记录</view> -->
+		<van-divider contentPosition="center">转化记录</van-divider>
+		<view class="clearHistory" wx:if="{{historyList.length > 0}}">
+			<van-button bindtap="clearHistory" type="primary" size="small">清除历史记录</van-button>
+		</view>
+		<view wx:for="{{historyList}}" wx:key="index" class="historyBox">
+			<view class="historyItem" bindtap="openHistory" data-url="{{item}}">{{tools.foemateUrl(item)}}</view>
+		</view>
+	</van-tab>
+	<van-tab title="PDF转文档" name="2">
+		<view class="pdfToFileBox">
+			<!-- <van-empty image="error" description="文件为空" /> -->
+			<van-radio-group value="{{ pdfToFileType }}" bind:change="onChangePdfToFileType" class="toFile">
+				转换类型
+				<van-radio name="docx" shape="square">WORD</van-radio>
+				<van-radio name="pptx" shape="square">PPT</van-radio>
+				<van-radio name="xlsx" shape="square">EXCEL</van-radio>
+				<van-radio name="txt" shape="square">TXT</van-radio>
+			</van-radio-group>
+			<view class="button">
+				<view bindtap="openAdd" class="chooseFileBox">
+					<van-button type="primary" size="small" loading-type="spinner" loading="{{chooseFileLoading}}"
+						loading-text="加载中...">选择PDF转文件</van-button>
+					<text class="tips">进入小程序观看一次广告，后续免费使用</text>
+				</view>
+				<view>
+					<van-button bind:click="getDownloadFile" type="info" size="small" loading-text="加载中..."
+						loading-type="spinner" loading="{{preFileLoading}}">预览文件</van-button>
+				</view>
+			</view>
+
+			<view class="loadingClass" wx:if="{{loadCount != 0}}">
+				<!-- <van-circle value="{{ loadCount }}" text="{{loadCount + '%'}}" /> -->
+				<van-progress percentage="{{ loadCount }}" />
+				<text class="toFilePro">文件转化进度</text>
+			</view>
+			<van-divider contentPosition="center">转化记录</van-divider>
+			<view class="clearHistory" wx:if="{{historyList.length > 0}}">
+				<van-button bindtap="clearHistory" type="primary" size="small">清除历史记录</van-button>
+			</view>
+			<view wx:for="{{historyList}}" wx:key="index" class="historyBox">
+				<view class="historyItem" bindtap="openHistory" data-url="{{item}}">{{tools.foemateUrl(item)}}</view>
+			</view>
+		</view>
+	</van-tab>
+</van-tabs>
+
+
+<van-toast id="van-toast" />
+<!-- 加载动画 -->
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+<button open-type="share" class='iconfont icon-weixin'>
+	<view class="share" bindtap="share">分享好友</view>
+</button>

@@ -1,0 +1,6 @@
+var foemateUrl = function (param) {
+	return param.split('/').pop();
+}
+module.exports = {
+	foemateUrl:foemateUrl
+};

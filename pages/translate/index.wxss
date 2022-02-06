@@ -1,0 +1,54 @@
+page {
+	background: #f5f3f3;
+	position: relative;
+	width: 100%;
+}
+
+.en,
+.cn {
+	min-height: 100px;
+	background: #FFF;
+	border-radius: 20rpx;
+	margin: 20rpx 20rpx;
+	padding: 10px;
+}
+
+.cn text,
+.en text {
+	background: rgb(219, 216, 216);
+	/* color: white; */
+	border-radius: 5px;
+	font-size: 26rpx;
+}
+
+.to {
+	margin-left: 30rpx;
+	margin-top: 20rpx;
+	font-size: 32rpx;
+}
+
+.chooseImg {
+	margin: 20rpx 30%;
+	display: flex;
+	justify-content:space-between;
+}
+
+.wordList {
+	margin: 30rpx 20rpx 150rpx 20rpx;
+	padding: 10px;
+	border-radius: 20rpx;
+	background: #FFF;
+	/* color: gray; */
+	font-size: 27rpx;
+	line-height: 44rpx;
+}
+.tips{
+	font-size: 25rpx;
+	margin-left: 20rpx;
+	text-align: center;
+}
+.copyText{
+	display: flex;
+	justify-content: center;
+	margin-top: 30rpx;
+}

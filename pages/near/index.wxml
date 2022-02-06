@@ -1,0 +1,15 @@
+<!--地图容器-->
+<map id="myMap" markers="{{markers}}" style="width:100%;height:300px;" longitude="{{longitude}}" latitude="{{latitude}}" scale='15'>
+</map>
+<view wx:for="{{markList}}" wx:key='index'>
+	<view class="listItem">
+		<view>
+			<view class="title">{{item.title}}</view>
+			<view class="address">{{item.address}}</view>
+		</view>
+		<view>
+			<image data-item='{{item}}' bindtap="openMapApp" src="../../assets/imgs/swiper/dh.png"></image>
+		</view>
+	</view>
+	<van-divider />
+</view>

@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"i-spin": "../../iview-weapp/spin/index"
+	},
+	"navigationBarBackgroundColor": "#FFFFFF",
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "翻译",
+	"enablePullDownRefresh": true
+}

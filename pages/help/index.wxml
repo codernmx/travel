@@ -1,0 +1,88 @@
+<!-- <van-notice-bar scrollable left-icon="volume-o" text="点击右上角...添加然后添加到我的小程序，使用更方便." /> -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+	<swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+		<image src="http://inews.gtimg.com/newsapp_ls/0/14413535319/0" mode="aspectFill" />
+	</swiper-item>
+	<swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+		<image src="http://inews.gtimg.com/newsapp_ls/0/14413553701/0" mode="aspectFill" />
+	</swiper-item>
+	<swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+		<image src="http://inews.gtimg.com/newsapp_ls/0/14413545123/0" mode="aspectFill" />
+	</swiper-item>
+	<!-- <swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+		<image src="../../assets/imgs/swiper/banner-5.jpg" mode="aspectFill" />
+	</swiper-item> -->
+	<!-- <swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+		<image src="../../assets/imgs/swiper/banner-4.jpg" mode="aspectFill" />
+	</swiper-item>
+	<swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+		<image src="../../assets/imgs/swiper/banner-3.jpg" mode="aspectFill" />
+	</swiper-item> -->
+</swiper>
+<!--绑定点击事件-->
+<view class="itemBox">
+	<view bindtap="toOtherPage" data-flag="1">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410413586/0'></image>
+		加油站
+	</view>
+	<view bindtap="toOtherPage" data-flag="2">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410439196/0'></image>
+		附近厕所
+	</view>
+	<view bindtap="toOtherPage" data-flag="3">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410481642/0'></image>
+		停车场
+	</view>
+	<view bindtap="toSubway">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410537199/0'></image>
+		地铁图
+	</view>
+	<view bindtap="toOtherPage" data-flag="5">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410560496/0'></image>
+		景点
+	</view>
+	<view bindtap="toOtherPage" data-flag="6">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410563237/0'></image>
+		超市
+	</view>
+	<view bindtap="toOtherPage" data-flag="7">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410564224/0'></image>
+		公交站
+	</view>
+	<view bindtap="toOtherPage" data-flag="8">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410566566/0'></image>
+		医院
+	</view>
+	<view bindtap="toOtherPage" data-flag="9">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410582204/0'></image>
+		电影院
+	</view>
+	<view bindtap="toOtherPage" data-flag="10">
+		<image src='../../assets/imgs/swiper/tools.png'></image>
+		去水印
+	</view>
+	<view bindtap="toOtherPage" data-flag="11">
+		<image src='http://inews.gtimg.com/newsapp_ls/0/14410582910/0'></image>
+		翻译
+	</view>
+	<view bindtap="toOtherPage" data-flag="12">
+		<image src='../../assets/imgs/swiper/head.png'></image>
+		头像
+	</view>
+	<!-- <view bindtap="toOtherPage" data-flag="11">
+		<image src='../../assets/imgs/swiper/mt.png'></image>
+		美团外卖
+	</view>
+	<view bindtap="toOtherPage" data-flag="12">
+		<image src='../../assets/imgs/swiper/elem.png'></image>
+		饿了么外卖
+	</view> -->
+</view>
+<view class="ad">
+	<ad unit-id="adunit-13a524dd13aa9cb5"></ad>
+</view>
+<van-toast id="van-toast" />
+<add-tips text="点击添加到我的小程序" duration="12" />
+<!-- <button open-type="share" class='iconfont icon-weixin'>
+	<view class="share" bindtap="share">分享好友</view>
+</button> -->

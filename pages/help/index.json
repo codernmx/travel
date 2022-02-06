@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"add-tips": "/components/weplug-add-tips/index"
+	},
+	"navigationBarBackgroundColor": "#FFFFFF",
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "出行助手"
+}

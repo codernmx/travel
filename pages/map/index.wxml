@@ -1,0 +1,1 @@
+<view bindtap="openMap">地铁图</view>

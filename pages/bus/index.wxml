@@ -1,0 +1,43 @@
+<!--地图容器-->
+<map id="myMap" markers="{{markers}}" style="width:100%;height:400rpx;" longitude="{{longitude}}" latitude="{{latitude}}" scale='14'>
+</map>
+<van-notify id="van-notify" />
+<view class="searchBox">
+	<view class="startAndEnd">
+		<view bindtap="toStart">{{startInfo.name}}</view>
+		<view bindtap="toEnd">{{endInfo.name}}</view>
+	</view>
+	<view>
+		<van-button type="primary" size="small" bindtap="routePlan">开始查询</van-button>
+	</view>
+</view>
+
+
+<van-divider />
+
+
+<view wx:for="{{markList}}" wx:key='index'>
+	<view class="itemBox">
+		<view class="listItem" data-item='{{item}}' bindtap="openMapApp">
+			<view>
+				<view class="title">{{item.title}}</view>
+				<view class="address">
+					<image src="/assets/imgs/bus/bus.png"></image>
+					<view class="meter">{{item.distance}}米</view>
+					<view class="addressTitle">{{item.address}}</view>
+				</view>
+			</view>
+		</view>
+		<view class="rightButton">
+			<image src="/assets/imgs/bus/right.png"></image>
+		</view>
+	</view>
+	<van-divider />
+	<!-- <van-divider borderColor="#1989fa" /> -->
+</view>
+
+
+<van-toast id="van-toast" />
+<!-- <button open-type="share" class='iconfont icon-weixin'>
+  <view class="share" bindtap="share">分享好友</view>
+</button> -->
